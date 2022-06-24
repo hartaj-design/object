@@ -10,6 +10,7 @@ function setup(){
     video=createCapture(VIDEO);
     video.size(700,500);
     
+    video.hide();
         model1=ml5.objectDetector("cocossd",modelloaded);
     document.getElementById("status").innerHTML="objects are detecting";
 }
